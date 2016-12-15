@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Pods-iOS_Practise.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-iOS_PractiseTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-iOS_PractiseUITests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>RESideMenu.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SDWebImage.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>405D2B62D7AB0C1A4FD013E820805BFD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5EAFF458D67707C4178B0976A020B870</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6BD0B66DA785ECE38C43ED96B929CFC8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8B9F3085A4BA79759EA0BABABBD93455</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A2E072E2C8C52746ABDB3A82A992274E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
