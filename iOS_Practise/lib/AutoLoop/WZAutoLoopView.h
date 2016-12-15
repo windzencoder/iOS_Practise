@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@class WFBannerModel;
+@class WZBannerModel;
 
 /**
  *  轮播View
@@ -18,7 +18,7 @@
 /**
  *  点击图片事件回调
  */
-@property (nonatomic, copy)   void(^clickAutoLoopCallBackBlock)(WFBannerModel *banner);
+@property (nonatomic, copy)   void(^clickAutoLoopCallBackBlock)(WZBannerModel *banner);
 
 /**
  *   是否自动滚动（默认为YES）
@@ -50,7 +50,7 @@
  *
  *  @param offset 偏移量
  */
-- (void)wf_parallaxHeaderViewWithOffset:(CGPoint)offset;
+- (void)parallaxHeaderViewWithOffset:(CGPoint)offset;
 
 
 @end

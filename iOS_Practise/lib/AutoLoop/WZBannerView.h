@@ -19,11 +19,11 @@
 
 @property (nonatomic,   copy) void (^clickBannerCallBackBlock)(WZBannerModel *banner);
 
-@property (nonatomic, strong)  UILabel *bannerTitleLbl;
-
 @property (nonatomic, assign)  CGFloat offsetY;
 
 @property (nonatomic, assign)  CGFloat titleAlpha;
+
+@property (nonatomic, assign) CGFloat titleYPositon;
 
 
 @end

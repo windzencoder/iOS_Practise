@@ -82,17 +82,17 @@
         CGFloat offSetY = scrollView.contentOffset.y;
         
         if ([self.tableView.tableHeaderView isKindOfClass:[WZAutoLoopView class]]) {
-            [(WZAutoLoopView *)(self.tableView.tableHeaderView) wf_parallaxHeaderViewWithOffset:scrollView.contentOffset];
+            [(WZAutoLoopView *)(self.tableView.tableHeaderView) parallaxHeaderViewWithOffset:scrollView.contentOffset];
         }
         
         CGFloat dateHeaderHeight = 44;
         if (offSetY <= dateHeaderHeight && offSetY >= 0) {
             
-            //            scrollView.contentInset = UIEdgeInsetsMake(-offSetY, 0, 0, 0);
+//                        scrollView.contentInset = UIEdgeInsetsMake(-offSetY, 0, 0, 0);
         }
         else if (offSetY >= dateHeaderHeight) {//偏移20
             
-            //            scrollView.contentInset = UIEdgeInsetsMake(20, 0, 0, 0);
+//                        scrollView.contentInset = UIEdgeInsetsMake(20, 0, 0, 0);
         }
  
     }

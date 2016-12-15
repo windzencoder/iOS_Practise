@@ -74,7 +74,7 @@
     _scrollView.delegate = self;
     _scrollView.backgroundColor = [UIColor whiteColor];
     _scrollView.pagingEnabled = YES;
-    _scrollView.contentSize = CGSizeMake(3 * CGRectGetWidth(self.bounds), 0);
+    _scrollView.contentSize = CGSizeMake(3 * CGRectGetWidth(self.bounds), CGRectGetHeight(self.bounds));
     [self addSubview:_scrollView];
 }
 
@@ -127,9 +127,8 @@
     [self updateCells];
     //重新调整frame
     for (NSInteger i = 0; i < _cells.count; i ++) {
-        WZBannerView *cell = [[WZBannerView alloc] init];
-        CGRect cellFrame = CGRectMake(CGRectGetWidth(self.bounds) * i, 0, CGRectGetWidth(self.bounds), _scrollView.frame.size.height);
-        cell.frame = cellFrame;
+        CGRect frame = CGRectMake(CGRectGetWidth(self.bounds) * i, 0, CGRectGetWidth(self.bounds), _scrollView.frame.size.height);
+        WZBannerView *cell = [[WZBannerView alloc] initWithFrame:frame];
         cell.tag = i + kBannerViewTag;
         cell.offsetY = _offsetY;
         cell.titleAlpha = _titleAlpha;
@@ -244,7 +243,6 @@
 }
 
 - (void)setNumberOfPagesInAutoLoopView:(int (^)(WZAutoLoopView *))numberOfPagesInAutoLoopView {
-    
     _numberOfPagesInAutoLoopView = numberOfPagesInAutoLoopView;
     int count = numberOfPagesInAutoLoopView(self);
     _pageControl.numberOfPages = count;
@@ -255,7 +253,7 @@
 }
 
 #pragma mark - Public Methods
-- (void)wf_parallaxHeaderViewWithOffset:(CGPoint)offset{
+- (void)parallaxHeaderViewWithOffset:(CGPoint)offset{
     if (_stretchAnimation == NO) {
         return;
     }
@@ -266,25 +264,16 @@
         
         frame.origin.y = MAX(offset.y/2, 0);
         _scrollView.frame = frame;
-        NSLog(@"_scrollView.frame : %@", NSStringFromCGRect(frame) );
         self.clipsToBounds = YES;
         _offsetY = MAX(offset.y/2, 0);
         
         for (int i = 0 ; i < 3 ; i ++) {
-            
             float h = offset.y / kAlpha;
-            
             _titleAlpha = 1 - ((h > 1)?1:h);
-            
             WZBannerView *bannerView = (WZBannerView *)[_scrollView viewWithTag:i + kBannerViewTag];
-            CGRect frame = bannerView.bannerTitleLbl.frame;
-            frame.origin.y = CGRectGetHeight(_scrollView.frame) - MAX(offset.y/2, 0) - 25 - CGRectGetHeight(frame);
-            bannerView.bannerTitleLbl.frame = frame;
-            
-            bannerView.bannerTitleLbl.alpha = _titleAlpha;
-            
+            [bannerView setTitleYPositon:CGRectGetHeight(_scrollView.frame) - MAX(offset.y/2, 0) - 25];
+            [bannerView setAlpha:_titleAlpha];
         }
-        
         
     }else{
         
@@ -295,20 +284,13 @@
         rect.size.height += delta;
         _scrollView.frame = rect;
         self.clipsToBounds = NO;
-        
         _offsetY = 0;
-        
         _titleAlpha = 1;
         
         for (int i = 0 ; i < 3 ; i ++) {
-            
             WZBannerView *bannerView = (WZBannerView *)[_scrollView viewWithTag:i + kBannerViewTag];
-            CGRect frame = bannerView.bannerTitleLbl.frame;
-            frame.origin.y = CGRectGetHeight(_scrollView.frame) - 25 - CGRectGetHeight(frame);
-            bannerView.bannerTitleLbl.frame = frame;
-            
-            NSLog(@"%@", self.scrollView);
-            
+            [bannerView setTitleYPositon:CGRectGetHeight(_scrollView.frame) - 25];
+            [bannerView setAlpha:_titleAlpha];
         }
     }
 }

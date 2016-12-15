@@ -10,6 +10,12 @@
 #import "WZBannerModel.h"
 #import <SDWebImage/UIImageView+WebCache.h>
 
+@interface WZBannerView()
+
+@property (nonatomic, strong)  UILabel *bannerTitleLbl;
+
+@end
+
 @implementation WZBannerView
 
 - (id)initWithFrame:(CGRect)frame {
@@ -67,6 +73,20 @@
     _bannerTitleLbl.attributedText = attStr;
     _bannerTitleLbl.alpha = _titleAlpha;
     
+}
+
+
+-(void)setAlpha:(CGFloat)alpha
+{
+    _bannerTitleLbl.alpha = alpha;
+}
+
+
+-(void)setTitleYPositon:(CGFloat)titleYPositon
+{
+    CGRect frame = _bannerTitleLbl.frame;
+    frame.origin.y = titleYPositon - CGRectGetHeight(frame);
+    _bannerTitleLbl.frame = frame;
 }
 
 @end
