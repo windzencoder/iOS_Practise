@@ -24,6 +24,10 @@
 		C658FCC51E01444F001ACDC8 /* WZBannerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C658FCC41E01444F001ACDC8 /* WZBannerModel.m */; };
 		C658FCC81E01449C001ACDC8 /* WZBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = C658FCC71E01449C001ACDC8 /* WZBannerView.m */; };
 		C658FCCB1E017079001ACDC8 /* WZAutoLoopViewTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C658FCCA1E017079001ACDC8 /* WZAutoLoopViewTestVC.m */; };
+		C65D4B5C1E0376BD005F2D26 /* WZHorizonalTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C65D4B571E0376BD005F2D26 /* WZHorizonalTableViewController.m */; };
+		C65D4B5D1E0376BD005F2D26 /* WZSwipableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C65D4B591E0376BD005F2D26 /* WZSwipableViewController.m */; };
+		C65D4B5E1E0376BD005F2D26 /* WZTitleBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = C65D4B5B1E0376BD005F2D26 /* WZTitleBarView.m */; };
+		C65D4B641E038122005F2D26 /* WZTestTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = C65D4B631E038122005F2D26 /* WZTestTabBarController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +82,14 @@
 		C658FCC71E01449C001ACDC8 /* WZBannerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZBannerView.m; sourceTree = "<group>"; };
 		C658FCC91E017079001ACDC8 /* WZAutoLoopViewTestVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZAutoLoopViewTestVC.h; sourceTree = "<group>"; };
 		C658FCCA1E017079001ACDC8 /* WZAutoLoopViewTestVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZAutoLoopViewTestVC.m; sourceTree = "<group>"; };
+		C65D4B561E0376BD005F2D26 /* WZHorizonalTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZHorizonalTableViewController.h; sourceTree = "<group>"; };
+		C65D4B571E0376BD005F2D26 /* WZHorizonalTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZHorizonalTableViewController.m; sourceTree = "<group>"; };
+		C65D4B581E0376BD005F2D26 /* WZSwipableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZSwipableViewController.h; sourceTree = "<group>"; };
+		C65D4B591E0376BD005F2D26 /* WZSwipableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZSwipableViewController.m; sourceTree = "<group>"; };
+		C65D4B5A1E0376BD005F2D26 /* WZTitleBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZTitleBarView.h; sourceTree = "<group>"; };
+		C65D4B5B1E0376BD005F2D26 /* WZTitleBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZTitleBarView.m; sourceTree = "<group>"; };
+		C65D4B621E038122005F2D26 /* WZTestTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZTestTabBarController.h; sourceTree = "<group>"; };
+		C65D4B631E038122005F2D26 /* WZTestTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZTestTabBarController.m; sourceTree = "<group>"; };
 		EA1D64CC16F6B238C67945D6 /* Pods-iOS_PractiseTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS_PractiseTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOS_PractiseTests/Pods-iOS_PractiseTests.debug.xcconfig"; sourceTree = "<group>"; };
 		EAA7285F516C8E963349A87B /* Pods-iOS_Practise.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS_Practise.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOS_Practise/Pods-iOS_Practise.release.xcconfig"; sourceTree = "<group>"; };
 		F7B6490C942646B3751782B7 /* libPods-iOS_PractiseUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOS_PractiseUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -209,6 +221,8 @@
 				C658FCBC1E00EACF001ACDC8 /* ContentViewController.m */,
 				C658FCC91E017079001ACDC8 /* WZAutoLoopViewTestVC.h */,
 				C658FCCA1E017079001ACDC8 /* WZAutoLoopViewTestVC.m */,
+				C65D4B621E038122005F2D26 /* WZTestTabBarController.h */,
+				C65D4B631E038122005F2D26 /* WZTestTabBarController.m */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -216,6 +230,7 @@
 		C658FCBE1E0142CA001ACDC8 /* lib */ = {
 			isa = PBXGroup;
 			children = (
+				C65D4B551E037697005F2D26 /* BarMenu */,
 				C658FCBF1E014300001ACDC8 /* AutoLoop */,
 			);
 			path = lib;
@@ -232,6 +247,19 @@
 				C658FCC71E01449C001ACDC8 /* WZBannerView.m */,
 			);
 			path = AutoLoop;
+			sourceTree = "<group>";
+		};
+		C65D4B551E037697005F2D26 /* BarMenu */ = {
+			isa = PBXGroup;
+			children = (
+				C65D4B561E0376BD005F2D26 /* WZHorizonalTableViewController.h */,
+				C65D4B571E0376BD005F2D26 /* WZHorizonalTableViewController.m */,
+				C65D4B581E0376BD005F2D26 /* WZSwipableViewController.h */,
+				C65D4B591E0376BD005F2D26 /* WZSwipableViewController.m */,
+				C65D4B5A1E0376BD005F2D26 /* WZTitleBarView.h */,
+				C65D4B5B1E0376BD005F2D26 /* WZTitleBarView.m */,
+			);
+			path = BarMenu;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -496,10 +524,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				C658FCC51E01444F001ACDC8 /* WZBannerModel.m in Sources */,
+				C65D4B641E038122005F2D26 /* WZTestTabBarController.m in Sources */,
 				C658FC8C1E00E654001ACDC8 /* RootViewController.m in Sources */,
+				C65D4B5C1E0376BD005F2D26 /* WZHorizonalTableViewController.m in Sources */,
+				C65D4B5E1E0376BD005F2D26 /* WZTitleBarView.m in Sources */,
 				C658FCBD1E00EACF001ACDC8 /* ContentViewController.m in Sources */,
 				C658FCC81E01449C001ACDC8 /* WZBannerView.m in Sources */,
 				C658FCC21E014345001ACDC8 /* WZAutoLoopView.m in Sources */,
+				C65D4B5D1E0376BD005F2D26 /* WZSwipableViewController.m in Sources */,
 				C658FCBA1E00EA06001ACDC8 /* LeftViewController.m in Sources */,
 				C658FC891E00E654001ACDC8 /* AppDelegate.m in Sources */,
 				C658FC861E00E654001ACDC8 /* main.m in Sources */,
